@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 
 <head>
@@ -9,33 +9,38 @@
 </head>
 
 <body>
-  
-	<h2>Fetch Posts</h2>
-    <button onclick="fetchPosts()">Fetch All Posts</button>
-    <br><br>
-    <input type="number" placeholder="Post ID" id="postIdInput">
-    <button onclick="fetchPost()">Fetch Post</button>
     
     <h2>Create Post</h2>
-    <input type="text" placeholder="Title" id="titleInput">
-    <br><br>
-    <textarea placeholder="Body" id="bodyInput"></textarea>
-    <br><br>
-    <input type="number" placeholder="User ID" id="userIdInput">
-    <button onclick="createPost()">Create Post</button>
-    
+      <input type="text" placeholder="Title" id="titleInput">
+      <br><br>
+      <textarea placeholder="Body" id="bodyInput"></textarea>
+      <br><br>
+      <input type="number" placeholder="User ID" id="userIdInput">
+      <button onclick="createPost()">Create Post</button>
+
+    <h2>Read Post</h2>
+      <input type="number" placeholder="Post ID" id="postIdInput">
+      <button onclick="fetchPost()">Read Post</button>
+      <br><br>
+  
     <h2>Update Post</h2>
-    <input type="number" placeholder="Post ID" id="updatePostIdInput">
-    <br><br>
-    <input type="text" placeholder="Title" id="updateTitleInput">
-    <br><br>
-    <textarea placeholder="Body" id="updateBodyInput"></textarea>
-    <br><br>
-    <button onclick="updatePost()">Update Post</button>
+      <input type="number" placeholder="Post ID" id="updatePostIdInput">
+      <br><br>
+      <input type="text" placeholder="Title" id="updateTitleInput">
+      <br><br>
+      <textarea placeholder="Body" id="updateBodyInput"></textarea>
+      <button onclick="updatePost()">Update Post</button>
     
     <h2>Delete Post</h2>
-    <input type="number" placeholder="Post ID" id="deletePostIdInput">
-    <button onclick="deletePost()">Delete Post</button>
+      <input type="number" placeholder="Post ID" id="deletePostIdInput">
+      <button onclick="deletePost()">Delete Post</button>
+
+    <br><br>
+    <br><br>
+    <h2>Fetch All Posts</h2>
+      <button onclick="fetchPosts()">Fetch All Posts</button>
+    
+    
   
   <script src="script.js"></script>
 
